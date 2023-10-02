@@ -6,10 +6,27 @@
 >>> add_integer(10, -6)
 4
 
+>>> add_integer(2)
+100
+
+>>> add_integer(1.5, 1.5)
+3.0
+
+>>> add_integer(10.2, -1.2)
+9.0
+
+>>> add_integer(None, 5)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
 >>> add_integer("abc", 3)
 Traceback (most recent call last):
 TypeError: a must be an integer
 
 >>> add_integer(3, "abc")
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+>>> add_integer(5, None)
 Traceback (most recent call last):
 TypeError: b must be an integer
