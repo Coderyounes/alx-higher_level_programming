@@ -59,7 +59,7 @@ class Rectangle:
         if type(self.print_symbol) is str:
             for i in range(self.height):
                 rec_str += self.print_symbol * self.width + "\n"
-        if type(self.print_symbol) is list:
+        if isinstance(self.print_symbol, (list, int)):
             for i in range(self.height):
                 rec_str += str(self.print_symbol) * self.width + "\n"
         return rec_str[:-1]
