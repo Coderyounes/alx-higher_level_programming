@@ -22,6 +22,9 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
+    """
+    Rectangle is an inheretant from BaseGeometry
+    """
     def __init__(self, width, height):
         """
         Initialize the inheret Class
