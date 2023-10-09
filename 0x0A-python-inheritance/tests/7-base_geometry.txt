@@ -1,0 +1,14 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+>>> obj = BaseGeometry()
+>>> obj.integer_validator("side", 10)
+
+>>> obj.integer_validator("length", -5)
+Traceback (most recent call last):
+    ...
+ValueError: <name> must be greater than 0
+
+>>> obj.integer_validator("radius", "hello")
+Traceback (most recent call last):
+    ...
+TypeError: <name> must be an integer
