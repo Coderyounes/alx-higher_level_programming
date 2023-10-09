@@ -12,3 +12,18 @@
 >>> empty_list = MyList([])
 >>> empty_list.print_sorted()
 []
+
+>>> print_list = MyList([1, 2, 3])
+>>> str(print_list)
+'[1, 2, 3]'
+
+>>> addto_list = MyList([1, 2, 3, 4, 5])
+>>> addto_list.append(10)
+>>> addto_list[-1]
+10
+
+>>> my_list = MyList([5, 200, 145, 900])
+>>> sorted_list = my_list.print_sorted()
+[5, 145, 200, 900]
+
+
