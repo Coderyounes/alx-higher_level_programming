@@ -15,8 +15,8 @@ class Square(Rectangle):
         Initialize the inheret Class
         check the size using integer_validator methods
         """
-        super().__init__(size, size)
         self.integer_validator("size", size)
+        super().__init__(size, size)
         self.__size = size
 
     def area(self):
