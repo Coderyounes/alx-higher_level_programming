@@ -30,6 +30,7 @@ class Rectangle(BaseGeometry):
         Initialize the inheret Class
         use the integer validator methods
         """
+        super().__init__()
         self.integer_validator("width", width)
         self.integer_validator("height", height)
         self.__width = width
