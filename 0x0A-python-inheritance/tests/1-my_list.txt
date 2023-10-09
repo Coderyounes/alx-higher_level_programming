@@ -1,0 +1,14 @@
+>>> MyList = __import__('1-my_list').MyList
+
+>>> simplelist = MyList([3, 1, 4, 5, 2])
+>>> simplelist.print_sorted()
+[1, 2, 3, 4, 5]
+
+
+>>> negative_list = MyList([-3, -1, -4, -5, -2])
+>>> negative_list.print_sorted()
+[-5, -4, -3, -2, -1]
+
+>>> empty_list = MyList([])
+>>> empty_list.print_sorted()
+[]
