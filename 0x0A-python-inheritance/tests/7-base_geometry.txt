@@ -11,6 +11,14 @@ ValueError: length must be greater than 0
 Traceback (most recent call last):
 TypeError: radius must be an integer
 
+>>> obj.integer_validator("length", 0)
+Traceback (most recent call last):
+ValueError: length must be greater than 0
+
+>>> obj.integer_validator("length", [1, 5])
+Traceback (most recent call last):
+TypeError: length must be an integer
+
 >>> obj = BaseGeometry()
 >>> obj.area()
 Traceback (most recent call last):
