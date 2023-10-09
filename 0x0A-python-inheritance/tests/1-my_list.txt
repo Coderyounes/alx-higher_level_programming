@@ -30,7 +30,7 @@
 
 #Empty List
 >>> empty_list = MyList()
->>> print(empty_list)
+>>> empty_list.print_sorted()
 []
 
 #Check for print
