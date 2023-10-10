@@ -11,5 +11,5 @@ def read_file(filename=""):
     encoding argument to handle the text format
     """
     with open(filename, encoding="utf-8") as f:
-        data = f.read()
-    print(data)
+        for line in f:
+            print(line, end="")
