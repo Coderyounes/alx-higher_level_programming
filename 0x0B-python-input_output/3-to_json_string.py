@@ -1,9 +1,6 @@
 #!/usr/bin/python3
-
+""" Define out to_json_string function"""
 import json
-
-
-"""Function return json represetation of the object"""
 
 
 def to_json_string(my_obj):
