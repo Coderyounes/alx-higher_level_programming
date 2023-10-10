@@ -10,5 +10,4 @@ def write_file(filename="", text=""):
     using f.write take data from text
     """
     with open(filename, "w", encoding="utf-8") as f:
-        num = f.write(text)
-    print(num)
+        return f.write(text)
