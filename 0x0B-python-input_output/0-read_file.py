@@ -10,6 +10,6 @@ def read_file(filename=""):
     the file is in filename argument
     encoding argument to handle the text format
     """
-    with open(filename, "r", encoding="UTF-8") as f:
+    with open(filename, encoding="utf-8") as f:
         data = f.read()
     print(data)
