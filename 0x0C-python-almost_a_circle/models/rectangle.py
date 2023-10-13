@@ -80,3 +80,11 @@ class Rectangle(Base):
             for j in range(self.width):
                 print(Rectangle.chars, end='')
             print()
+
+    def __str__(self):
+        name = "[Rectangle]"
+        id_p = "(" + str(self.id) + ")"
+        xy_p = str(self.x) + "/" + str(self.y)
+        widh_p = str(self.width) + "/" + str(self.height)
+        resu = name + " " + id_p + " " + xy_p + "-" + " " + widh_p
+        return resu
