@@ -10,6 +10,9 @@ class Rectangle(Base):
     use the super() to get from id value from base
     setup all private attribute Getter & setter one by one
     """
+
+    chars = "#"
+
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
         self.width = width
@@ -71,3 +74,9 @@ class Rectangle(Base):
 
     def area(self):
         return self.height * self.width
+
+    def display(self):
+        for i in range(self.height):
+            for j in range(self.width):
+                print(Rectangle.chars, end='')
+            print()
