@@ -93,7 +93,7 @@ class Rectangle(Base):
         resu = name + " " + id_p + " " + xy_p + "-" + " " + widh_p
         return resu
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         num_args = len(args)
         if num_args >= 1:
             self.id = args[0]
@@ -105,3 +105,7 @@ class Rectangle(Base):
             self.x = args[3]
         if num_args >= 5:
             self.y = args[4]
+
+        for key, value in kwargs.items():
+            if hasattr(self, key):
+                setattr(self, key, value)
