@@ -92,3 +92,16 @@ class Rectangle(Base):
         widh_p = str(self.width) + "/" + str(self.height)
         resu = name + " " + id_p + " " + xy_p + "-" + " " + widh_p
         return resu
+
+    def update(self, *args):
+        num_args = len(args)
+        if num_args >= 1:
+            self.id = args[0]
+        if num_args >= 2:
+            self.width = args[1]
+        if num_args >= 3:
+            self.height = args[2]
+        if num_args >= 4:
+            self.x = args[3]
+        if num_args >= 5:
+            self.y = args[4]
