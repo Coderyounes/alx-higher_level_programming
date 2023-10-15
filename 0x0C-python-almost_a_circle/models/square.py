@@ -30,7 +30,6 @@ class Square(Rectangle):
         self.width = value
         self.height = value
 
-
     def update(self, *args, **kwargs):
         num_args = len(args)
         if num_args >= 1:
@@ -46,3 +45,10 @@ class Square(Rectangle):
             if hasattr(self, key):
                 setattr(self, key, value)
 
+    def to_dictionary(self):
+        return {
+            'id': self.id,
+            'x': self.x,
+            'size': self.width,
+            'y': self.y
+            }
