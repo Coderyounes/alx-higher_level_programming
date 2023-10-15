@@ -38,3 +38,10 @@ class Base:
                     dict_obj = obj.to_dictionary()
                     list_dicts.append(dict_obj)
                 json.dump(list_dicts, f)
+
+    @staticmethod
+    def from_json_string(json_string):
+        if json_string is None or json_string == "[]":
+            return []
+        else:
+            return json.loads(json_string)
