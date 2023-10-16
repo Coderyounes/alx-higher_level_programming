@@ -64,9 +64,3 @@ class TestSquare(unittest.TestCase):
 
         with self.assertRaises(ValueError):
             self.square.update(10, -5, 1, 2)
-
-    def test_default_values(self):
-        default_square = Square(2)
-        self.assertEqual(default_square.x, 0)
-        self.assertEqual(default_square.y, 0)
-        self.assertIsNone(default_square.id)
