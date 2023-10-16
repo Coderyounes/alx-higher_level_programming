@@ -125,6 +125,11 @@ class Rectangle(Base):
                 setattr(self, key, value)
 
     def to_dictionary(self):
+        """
+        to_dictionart method simple method
+        return dictionary representation
+        Take no argument
+        """
         return {
             'id': self.id,
             'width': self.width,
