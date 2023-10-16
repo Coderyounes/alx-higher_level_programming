@@ -56,7 +56,7 @@ class Base:
 
             new.update(**dictionary)
             return new
- 
+
     @classmethod
     def load_from_file(cls):
         filename = str(cls.__name__) + ".json"
