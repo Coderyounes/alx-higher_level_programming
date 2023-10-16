@@ -31,6 +31,12 @@ class Square(Rectangle):
         self.height = value
 
     def update(self, *args, **kwargs):
+        """
+        update method is method the update
+        object dimension , based on their placement
+        by using args we need to get the len of args
+        the start put every arg in their right place
+        """
         num_args = len(args)
         if num_args >= 1:
             self.id = args[0]
@@ -46,6 +52,11 @@ class Square(Rectangle):
                 setattr(self, key, value)
 
     def to_dictionary(self):
+        """
+        to_dictionary method
+        Take string then Convert it to dictionary
+        via dictionary text formatting
+        """
         return {
             'id': self.id,
             'x': self.x,
