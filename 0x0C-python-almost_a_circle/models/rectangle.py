@@ -73,9 +73,18 @@ class Rectangle(Base):
             self.__y = value
 
     def area(self):
+        """
+        this method is for caluculating the area of
+        a rectangle it take width & height then multiply
+        them
+        """
         return self.height * self.width
 
     def display(self):
+        """
+        based on dimension of the rectangle already provided
+        the display method print spaces & # symbol
+        """
         for i in range(self.y):
             print()
         for i in range(self.height):
@@ -94,6 +103,11 @@ class Rectangle(Base):
         return resu
 
     def update(self, *args, **kwargs):
+        """
+        the update method update the attributes value using args
+        it Check the len of args first  in order to put each arg in their
+        right place
+        """
         num_args = len(args)
         if num_args >= 1:
             self.id = args[0]
