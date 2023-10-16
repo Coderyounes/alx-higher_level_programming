@@ -52,11 +52,11 @@ class TestRectangle(unittest.TestCase):
                 'y': 1
         }
         self.assertEqual(self.rectangle.to_dictionary(), expected_dict)
-    
+
     def test_invalid_width(self):
         with self.assertRaises(ValueError):
             self.rectangle.width = -1
-    
+
     def test_str_width(self):
         with self.assertRaises(TypeError):
             self.rectangle.width = "text"

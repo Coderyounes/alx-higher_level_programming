@@ -97,7 +97,7 @@ class TestBase_json(unittest.TestCase):
         s2 = Square(4, 5, 21, 2)
         list_dicts = [s1.to_dictionary(), s2.to_dictionary()]
         self.assertTrue(len(Base.to_json_string(list_dicts)) == 78)
-    
+
     def test_to_json_string_empty_list(self):
         self.assertEqual("[]", Base.to_json_string([]))
 
@@ -111,6 +111,7 @@ class TestBase_json(unittest.TestCase):
     def test_to_json_string_more_than_one_arg(self):
         with self.assertRaises(TypeError):
             Base.to_json_string([], 1)
+
 
 class TestBase_create(unittest.TestCase):
     """Unittests for testing create method of Base class."""
