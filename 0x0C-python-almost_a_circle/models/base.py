@@ -37,7 +37,8 @@ class Base:
                 for obj in list_objs:
                     dict_obj = obj.to_dictionary()
                     list_dicts.append(dict_obj)
-                json.dump(list_dicts, f)
+                json_str = cls.to_json_string(list_dicts)
+                f.write(json_str)
 
     @staticmethod
     def from_json_string(json_string):
