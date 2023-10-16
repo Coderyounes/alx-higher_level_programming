@@ -7,5 +7,5 @@ import unittest
 from models.base import Base
 
 
-class TestRectangle(unittest.Testcase):
+class TestRectangle(unittest.TestCase):
     """Below some Test case for rectangle """
