@@ -2,3 +2,5 @@
 *.html             # Exclude all HTML files
 *-main.js          # Exclude files ending with '-main.js'
 app.js             # Exclude app.js specifically
+
+note.txt
