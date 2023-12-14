@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     cur = db_conn.cursor()
 
-    cur.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC")
+    cur.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
 
     results = cur.fetchall()
 
@@ -23,4 +23,3 @@ if __name__ == "__main__":
 
     cur.close()
     db_conn.close()
-
