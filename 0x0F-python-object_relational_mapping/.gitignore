@@ -1,0 +1,3 @@
+# .gitignore within the 0x0F-python-object_relational_mapping directory
+*.sql
+venv/
