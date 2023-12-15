@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 
-
-import sys
-import MySQLdb
-
 """
 List all data(states) from state Table order
 by the id.
 (args) a gotten from sys.argv without check
 """
+
+
+import sys
+import MySQLdb
 
 
 if __name__ == "__main__":
