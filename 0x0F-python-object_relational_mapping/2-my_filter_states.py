@@ -1,5 +1,11 @@
 #!/usr/bin/python3
 
+"""
+    Script Extract All row of data(data)
+    from state Table If Exist
+    (args) are received from sys.argv withou Check
+"""
+
 
 import sys
 import MySQLdb
@@ -16,7 +22,7 @@ if __name__ == "__main__":
     cur = db_conn.cursor()
 
     cur.execute("SELECT * FROM states "
-                "WHERE name = '{}' "
+                "WHERE name LIKE BINARY '{}' "
                 "ORDER BY id ASC".format(state))
 
     results = cur.fetchall()
