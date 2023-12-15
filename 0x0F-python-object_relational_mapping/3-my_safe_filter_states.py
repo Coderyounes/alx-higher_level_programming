@@ -1,5 +1,12 @@
 #!/usr/bin/python3
 
+"""
+    Script Extract All row of data(data)
+    from state Table If Exist
+    parameterized queries to prevent SQLi
+    (args) are received from sys.argv
+"""
+
 
 import sys
 import MySQLdb
