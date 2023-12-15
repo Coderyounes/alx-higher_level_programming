@@ -1,5 +1,11 @@
 #!/usr/bin/python3
 
+"""
+List all data(states) from state Table that start
+with 'N' order by the id.
+(args) a gotten from sys.argv without check
+"""
+
 
 import sys
 import MySQLdb

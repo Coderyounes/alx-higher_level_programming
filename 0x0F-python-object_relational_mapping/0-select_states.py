@@ -21,7 +21,7 @@ if __name__ == "__main__":
 
     cur = db_conn.cursor()
 
-    cur.execute("SELECT * FROM states ORDER BY id ASC")
+    cur.execute("SELECT * FROM states ORDER BY states.id ASC")
 
     results = cur.fetchall()
 
