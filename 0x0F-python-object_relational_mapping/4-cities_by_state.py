@@ -1,5 +1,13 @@
 #!/usr/bin/python3
 
+"""
+    Script Extract All cities
+    within in certain state
+    the Script is Using aliasing
+    (args) received from sys.argv
+"""
+
+
 import sys
 import MySQLdb
 
