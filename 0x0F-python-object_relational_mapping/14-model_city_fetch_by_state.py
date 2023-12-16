@@ -15,13 +15,10 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     session = Session(bind=engine)
 
-    results = session.query(State).\
-        join(City).filter(State.id == City.state_id).\
-        order_by(asc(City.id)).all()
+    results = session.query(State, City).filter(State.id == City.state_id)
 
-    for state in results:
-        for city in state.cities:
-            print("{}: ({}) {}".format(state.name, city.id, city.name))
+    for x in results:
+        print("{}: ({}) {}".format(x.State.name, x.City.id, x.City.name))
 
     session.close()
     engine.dispose()
