@@ -8,7 +8,15 @@ from model_state import Base, State
 from sqlalchemy import Column, String, Integer
 from sqlalchemy import ForeignKey
 
+
 class City(Base):
+    """
+        City Class inherent from Base
+        (attrbiutes):
+            id : unique
+            name: max of 128
+            state_id: Foreign key of states.id
+    """
     __tablename__ = 'cities'
 
     id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
