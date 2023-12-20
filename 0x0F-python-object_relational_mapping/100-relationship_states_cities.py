@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+"""
+    Create a City in a State in certain Database
+"""
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
