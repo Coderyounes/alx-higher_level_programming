@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Bash Script display the reponse size in byte
+
 if [ -z "$1" ]; then
     echo "USAGE: $0 <URL>"
     exit 1
