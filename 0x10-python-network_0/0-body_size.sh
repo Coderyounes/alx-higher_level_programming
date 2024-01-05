@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # Bash Script display the reponse size in byte
 
 if [ -z "$1" ]; then
