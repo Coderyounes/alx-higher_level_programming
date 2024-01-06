@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 """
+    first usage of urllib
+        parse type
+        parse content
+        parse content in utf-8
 """
-
 if __name__ == '__main__':
     import urllib.request
 
