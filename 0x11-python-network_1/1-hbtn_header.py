@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""
-    Extraxt Header using urlib
-"""
 import sys
 import urllib.request
 
+"""
+    Extraxt Header using urlib
+"""
 
 with urllib.request.urlopen(sys.argv[1]) as response:
     html = response.read()
