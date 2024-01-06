@@ -12,10 +12,10 @@ if __name__ == '__main__':
     r = sys.argv[1]
     o = sys.argv[2]
     url = 'https://api.github.com/repos/{}/{}/commits'.format(o, r)
-    limit = 10
     re = requests.get(url)
     if re.status_code == 200:
         r_json = re.json()
+        limit = min(10, len(r_json))
         for i in range(limit):
             sha = r_json[i]['sha']
             author = r_json[i]['commit']['author']['name']
