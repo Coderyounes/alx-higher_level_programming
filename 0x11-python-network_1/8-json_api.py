@@ -10,12 +10,12 @@ if __name__ == '__main__':
     import sys
 
     url = 'http://0.0.0.0:5000/search_user'
-        
+
     if sys.argv[1]:
         param = {'q': sys.argv[1]}
     else:
         param = {'q': ''}
-    
+
     r = requests.post(url, data=param)
     if not r.content:
         print("No result")
