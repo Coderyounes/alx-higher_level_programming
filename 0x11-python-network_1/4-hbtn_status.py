@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
-
+    a GET using request module
+        display the response.text type
+        display the reponse.text
 """
 
 if __name__ == '__main__':
