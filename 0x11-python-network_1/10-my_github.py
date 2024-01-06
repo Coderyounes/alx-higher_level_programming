@@ -12,7 +12,7 @@ if __name__ == "__main__":
         'Authorization': f'Bearer {password}'
         }
 
-    r = requests.get('https://api.github.com/{}'.format(u), headers=header)
+    r = requests.get('https://api.github.com/users/{}'.format(u), headers=header)
     if r.status_code == 200:
         r_json = r.json()
         print(r_json['id'])
