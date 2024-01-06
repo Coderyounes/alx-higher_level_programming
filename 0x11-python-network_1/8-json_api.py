@@ -25,5 +25,5 @@ if __name__ == '__main__':
             try:
                 response = r.json()
                 print("[{}] {}".format(response['id'], response['name']))
-            except requests.exceptions.JSONDecodeError:
-                raise ValueError("Not a valid JSON")
+            except ValueError:
+                print("Not a valid JSON")
